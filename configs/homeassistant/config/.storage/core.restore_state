@@ -1,0 +1,194 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.stephan",
+                "state": "unknown",
+                "attributes": {
+                    "editable": false,
+                    "id": "stephan",
+                    "user_id": "35a3ab5faeed4b25b6ece6d146f0599b",
+                    "friendly_name": "Stephan"
+                },
+                "last_changed": "2022-02-04T14:10:26.451082+00:00",
+                "last_updated": "2022-02-04T14:10:27.660660+00:00",
+                "context": {
+                    "id": "d788aa7bea6b2825467a1874f7478bef",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.jacuzzi_blower_switch",
+                "state": "unavailable",
+                "attributes": {
+                    "friendly_name": "Blower"
+                },
+                "last_changed": "2022-02-04T14:10:26.948376+00:00",
+                "last_updated": "2022-02-04T14:10:26.948376+00:00",
+                "context": {
+                    "id": "78b3425ed3feebe000c7c59fa46abe1f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.jacuzzi_jets_switch",
+                "state": "unavailable",
+                "attributes": {
+                    "friendly_name": "Jets"
+                },
+                "last_changed": "2022-02-04T14:10:26.948612+00:00",
+                "last_updated": "2022-02-04T14:10:26.948612+00:00",
+                "context": {
+                    "id": "73dda8a9b48aa357586aae1d9d099834",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_g975f_battery_level",
+                "state": "100",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "%",
+                    "device_class": "battery",
+                    "icon": "mdi:battery",
+                    "friendly_name": "SM-G975F Battery Level"
+                },
+                "last_changed": "2022-02-04T14:10:27.043192+00:00",
+                "last_updated": "2022-02-04T14:10:27.043192+00:00",
+                "context": {
+                    "id": "fa16c8606768a1799f2dfb50686309e7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_g975f_battery_state",
+                "state": "full",
+                "attributes": {
+                    "icon": "mdi:battery-charging",
+                    "friendly_name": "SM-G975F Battery State"
+                },
+                "last_changed": "2022-02-04T14:10:27.043304+00:00",
+                "last_updated": "2022-02-04T14:10:27.043304+00:00",
+                "context": {
+                    "id": "e1c8d07d71f80f9cbdb03fa160779a42",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_g975f_charger_type",
+                "state": "ac",
+                "attributes": {
+                    "icon": "mdi:power-plug",
+                    "friendly_name": "SM-G975F Charger Type"
+                },
+                "last_changed": "2022-02-04T14:10:27.043381+00:00",
+                "last_updated": "2022-02-04T14:10:27.043381+00:00",
+                "context": {
+                    "id": "9d7424b4159e89392cb4b81c8e34f17c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_g975f_battery_health",
+                "state": "good",
+                "attributes": {
+                    "icon": "mdi:battery-heart-variant",
+                    "friendly_name": "SM-G975F Battery Health"
+                },
+                "last_changed": "2022-02-04T14:10:27.043453+00:00",
+                "last_updated": "2022-02-04T14:10:27.043453+00:00",
+                "context": {
+                    "id": "254523427377e960df9da42b845e45d2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_g975f_battery_temperature",
+                "state": "31.2",
+                "attributes": {
+                    "state_class": "measurement",
+                    "unit_of_measurement": "\u00b0C",
+                    "device_class": "temperature",
+                    "icon": "mdi:battery",
+                    "friendly_name": "SM-G975F Battery Temperature"
+                },
+                "last_changed": "2022-02-04T14:10:27.043527+00:00",
+                "last_updated": "2022-02-04T14:10:27.043527+00:00",
+                "context": {
+                    "id": "3095c679a0a3465dd938885cbc383e40",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.sm_g975f_is_charging",
+                "state": "on",
+                "attributes": {
+                    "device_class": "plug",
+                    "icon": "mdi:power-plug",
+                    "friendly_name": "SM-G975F Is Charging"
+                },
+                "last_changed": "2022-02-04T14:10:27.043605+00:00",
+                "last_updated": "2022-02-04T14:10:27.043605+00:00",
+                "context": {
+                    "id": "b0898cccee379aa920dc4d1debf08e62",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.sm_g975f",
+                "state": "unknown",
+                "attributes": {
+                    "source_type": "gps",
+                    "friendly_name": "SM-G975F"
+                },
+                "last_changed": "2022-02-04T14:10:27.047275+00:00",
+                "last_updated": "2022-02-04T14:10:27.047275+00:00",
+                "context": {
+                    "id": "0a98db0cf1b715545143f157fbc6bda4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2022-02-04T14:13:21.070460+00:00"
+        }
+    ]
+}

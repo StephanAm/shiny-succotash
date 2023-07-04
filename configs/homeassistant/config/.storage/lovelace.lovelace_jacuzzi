@@ -1,0 +1,48 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace.lovelace_jacuzzi",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "title": "Home",
+                    "cards": [
+                        {
+                            "type": "thermostat",
+                            "entity": "climate.jacuzzi"
+                        },
+                        {
+                            "type": "grid",
+                            "cards": [
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    },
+                                    "entity": "switch.jacuzzi_jets_switch",
+                                    "name": "Jets",
+                                    "show_state": true
+                                },
+                                {
+                                    "type": "button",
+                                    "entity": "switch.jacuzzi_blower_switch",
+                                    "name": "Blower",
+                                    "show_state": true
+                                },
+                                {
+                                    "type": "glance",
+                                    "entities": [
+                                        {
+                                            "entity": "binary_sensor.jacuzzi_heater_status"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

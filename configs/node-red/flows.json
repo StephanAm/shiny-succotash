@@ -1,0 +1,933 @@
+[
+    {
+        "id": "cdb2fe1c8aa7daf2",
+        "type": "tab",
+        "label": "Jacuzzi",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "68e734f4af1dc865",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e08f0fea41fc2a42",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dbc4218e6b2c6438",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "68e734f4af1dc865",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9524fe2354889748",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "426cceb7f04e9704",
+        "type": "mqtt-broker",
+        "name": "Home",
+        "broker": "mqtt",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6bde21d803785ab6",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "17ed6de2359a1656",
+        "type": "ui_group",
+        "name": "Jacuzzi Temp",
+        "tab": "eb6c087db48bd9f5",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "eb6c087db48bd9f5",
+        "type": "ui_tab",
+        "name": "Jacuzzi",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "56bbba4989c3cdce",
+        "type": "ui_group",
+        "name": "Jacuzzi Control",
+        "tab": "eb6c087db48bd9f5",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "2bba82732954f716",
+        "type": "light-scheduler-settings",
+        "name": "PTA",
+        "latitude": "-28.23",
+        "longitude": "25.7"
+    },
+    {
+        "id": "a73fd007930c6688",
+        "type": "mqtt out",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Blower Control",
+        "topic": "home/jacuzzi/blower/set",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "426cceb7f04e9704",
+        "x": 800,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "42d11cc95f911f68",
+        "type": "mqtt in",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Blower Control",
+        "topic": "home/jacuzzi/blower/set",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "426cceb7f04e9704",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "3eec3cbf8aa28ddd"
+            ]
+        ]
+    },
+    {
+        "id": "93e08f849433a327",
+        "type": "mqtt out",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Jets Control",
+        "topic": "home/jacuzzi/jets/set",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "426cceb7f04e9704",
+        "x": 790,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1f2cdff78b195108",
+        "type": "ui_switch",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "label": "Jets",
+        "tooltip": "",
+        "group": "56bbba4989c3cdce",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "93e08f849433a327"
+            ]
+        ]
+    },
+    {
+        "id": "606d273367324030",
+        "type": "mqtt in",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Jets Control",
+        "topic": "home/jacuzzi/jets/set",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "426cceb7f04e9704",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "fa27149c42ae27ac"
+            ]
+        ]
+    },
+    {
+        "id": "08a33c650d4628a1",
+        "type": "mqtt out",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Master Control",
+        "topic": "home/jacuzzi/master/set",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "426cceb7f04e9704",
+        "x": 920,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "7684022de223e647",
+        "type": "ui_switch",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "label": "Master",
+        "tooltip": "",
+        "group": "56bbba4989c3cdce",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 750,
+        "y": 20,
+        "wires": [
+            [
+                "08a33c650d4628a1"
+            ]
+        ]
+    },
+    {
+        "id": "4340049097fe2814",
+        "type": "mqtt in",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Master Control",
+        "topic": "home/jacuzzi/master/set",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "426cceb7f04e9704",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 20,
+        "wires": [
+            [
+                "ba4e9612bfc4e14e"
+            ]
+        ]
+    },
+    {
+        "id": "fa27149c42ae27ac",
+        "type": "delay",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "10",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 280,
+        "y": 300,
+        "wires": [
+            [
+                "14419460f8ae99c6"
+            ]
+        ]
+    },
+    {
+        "id": "ba4e9612bfc4e14e",
+        "type": "delay",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "10",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 20,
+        "wires": [
+            [
+                "f26f35c4ce3f7322"
+            ]
+        ]
+    },
+    {
+        "id": "14419460f8ae99c6",
+        "type": "rbe",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "1f2cdff78b195108"
+            ]
+        ]
+    },
+    {
+        "id": "f26f35c4ce3f7322",
+        "type": "rbe",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 570,
+        "y": 20,
+        "wires": [
+            [
+                "7684022de223e647"
+            ]
+        ]
+    },
+    {
+        "id": "2d3d93c713e3d80d",
+        "type": "ui_gauge",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "group": "17ed6de2359a1656",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "units",
+        "format": "{{value|number:1}} °C",
+        "min": "20",
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 350,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "6c23626f1e8bdfd9",
+        "type": "mqtt in",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Current Temp",
+        "topic": "home/jacuzzi/temp/current/status",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "426cceb7f04e9704",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 620,
+        "wires": [
+            [
+                "2d3d93c713e3d80d",
+                "04f05e9268d5838e"
+            ]
+        ]
+    },
+    {
+        "id": "5dbec2f2c8778e03",
+        "type": "ui_slider",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "17ed6de2359a1656",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "20",
+        "max": "40",
+        "step": 1,
+        "className": "",
+        "x": 630,
+        "y": 440,
+        "wires": [
+            [
+                "fbc53906be658678"
+            ]
+        ]
+    },
+    {
+        "id": "fbc53906be658678",
+        "type": "mqtt out",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Temp Control",
+        "topic": "home/jacuzzi/temp/target/set",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "426cceb7f04e9704",
+        "x": 790,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "be1721bdf6c74ebe",
+        "type": "delay",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "10",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 280,
+        "y": 440,
+        "wires": [
+            [
+                "106bc9b421814be7"
+            ]
+        ]
+    },
+    {
+        "id": "106bc9b421814be7",
+        "type": "rbe",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 450,
+        "y": 440,
+        "wires": [
+            [
+                "5dbec2f2c8778e03"
+            ]
+        ]
+    },
+    {
+        "id": "c66d13674f87a203",
+        "type": "ui_switch",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "label": "Blower",
+        "tooltip": "",
+        "group": "56bbba4989c3cdce",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 630,
+        "y": 240,
+        "wires": [
+            [
+                "a73fd007930c6688"
+            ]
+        ]
+    },
+    {
+        "id": "984f31244a58904f",
+        "type": "rbe",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "c66d13674f87a203"
+            ]
+        ]
+    },
+    {
+        "id": "3eec3cbf8aa28ddd",
+        "type": "delay",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "10",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "984f31244a58904f"
+            ]
+        ]
+    },
+    {
+        "id": "a06c93756ae5be0d",
+        "type": "mqtt in",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Target Temp Status",
+        "topic": "home/jacuzzi/temp/target/status",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "426cceb7f04e9704",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 500,
+        "wires": [
+            [
+                "be1721bdf6c74ebe",
+                "04f05e9268d5838e"
+            ]
+        ]
+    },
+    {
+        "id": "04f05e9268d5838e",
+        "type": "ui_chart",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Temperature chart",
+        "group": "17ed6de2359a1656",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": false,
+        "ymin": "20",
+        "ymax": "40",
+        "removeOlder": "30",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#75507b",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0649a635b29c2314",
+        "type": "ui_led",
+        "z": "cdb2fe1c8aa7daf2",
+        "order": 2,
+        "group": "56bbba4989c3cdce",
+        "width": "3",
+        "height": "1",
+        "label": "Heater",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "ON",
+                "valueType": "str"
+            },
+            {
+                "color": "#555753",
+                "value": "OFF",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 640,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3d2adc13bf933bd6",
+        "type": "mqtt in",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "topic": "home/jacuzzi/heater/status",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "426cceb7f04e9704",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "0649a635b29c2314",
+                "264b628808b699ac"
+            ]
+        ]
+    },
+    {
+        "id": "264b628808b699ac",
+        "type": "ui_statetrail",
+        "z": "cdb2fe1c8aa7daf2",
+        "group": "17ed6de2359a1656",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "states": [
+            {
+                "state": "ON",
+                "col": "#009933",
+                "t": "str",
+                "label": ""
+            },
+            {
+                "state": "OFF",
+                "col": "#999999",
+                "t": "str",
+                "label": ""
+            }
+        ],
+        "periodLimit": 1,
+        "periodLimitUnit": "3600",
+        "timeformat": "HH:mm:ss",
+        "tickmarks": 4,
+        "persist": false,
+        "legend": 1,
+        "combine": true,
+        "blanklabel": "",
+        "x": 640,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0c47d84adc9a92e",
+        "type": "mqtt out",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "Master Control",
+        "topic": "home/jacuzzi/master/set",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "426cceb7f04e9704",
+        "x": 540,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "0b7b5e8c38177011",
+        "type": "debug",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ad24c015bdbb3e4c",
+        "type": "inject",
+        "z": "cdb2fe1c8aa7daf2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "57 12 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 310,
+        "y": 1060,
+        "wires": [
+            [
+                "c0c47d84adc9a92e",
+                "0b7b5e8c38177011"
+            ]
+        ]
+    }
+]

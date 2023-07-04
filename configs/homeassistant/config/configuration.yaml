@@ -1,0 +1,101 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+sensor:
+  - platform: mqtt
+    unique_id: jacuzzi_current_temp
+    state_topic: 'home/jacuzzi/temp/current/status'
+    name: 'Jacuzzi Current Temp'
+    unit_of_measurement: '°C'
+    availability:
+      topic: "home/jacuzzi/status"
+      payload_available: "ON"
+      payload_not_available: "OFF"
+
+  - platform: mqtt
+    unique_id: jacuzzi_target_temp
+    state_topic: 'home/jacuzzi/temp/target/status'
+    name: 'Jacuzzi Target Temp'
+    unit_of_measurement: '°C'
+    availability:
+      topic: "home/jacuzzi/status"
+      payload_available: "ON"
+      payload_not_available: "OFF"
+
+binary_sensor:
+  - platform: mqtt
+    unique_id: jacuzzi_heater_status
+    state_topic: 'home/jacuzzi/heater/status'
+    name: 'Jacuzzi Heater Status'
+    availability:
+      topic: "home/jacuzzi/status"
+      payload_available: "ON"
+      payload_not_available: "OFF"
+
+switch:
+  - platform: mqtt
+    unique_id: jacuzzi_blower_switch
+    name: "Jacuzzi Blower Switch"
+    state_topic: "home/jacuzzi/blower/status"
+    command_topic: "home/jacuzzi/blower/set"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 2
+    retain: true
+    availability:
+      topic: "home/jacuzzi/status"
+      payload_available: "ON"
+      payload_not_available: "OFF"
+  - platform: mqtt
+    unique_id: jacuzzi_jets_switch
+    name: "Jacuzzi Jets Switch"
+    state_topic: "home/jacuzzi/jets/status"
+    command_topic: "home/jacuzzi/jets/set"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 2
+    retain: true
+    availability:
+      topic: "home/jacuzzi/status"
+      payload_available: "ON"
+      payload_not_available: "OFF"
+
+climate:
+  - platform: mqtt
+    unique_id: jacuzzi_climate_control
+    name: Jacuzzi
+    modes:
+      - "off"
+      - "auto"
+    aux_command_topic: "home/jacuzzi/blower/set"
+    aux_state_topic: "home/jacuzzi/blower/status"
+    current_temperature_topic: "home/jacuzzi/temp/current/status"
+    max_temp: 40
+    min_temp: 20
+    power_command_topic: "home/jacuzzi/master/set"
+    power_state_topic: "home/jacuzzi/master/status"
+    temperature_command_topic: "home/jacuzzi/temp/target/set"
+    temperature_state_topic: "home/jacuzzi/temp/target/status"
+    precision: 1.0    
+    qos: 2
+    retain: true
+    availability:
+      topic: "home/jacuzzi/status"
+      payload_available: "ON"
+      payload_not_available: "OFF"

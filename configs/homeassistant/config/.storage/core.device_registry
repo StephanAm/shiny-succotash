@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "minor_version": 2,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "151e2e802637fd4af8384676aa31db0d"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "999b2a8bcfdb57bba4a7bc032689e97e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://www.met.no/en"
+            },
+            {
+                "config_entries": [
+                    "ea155545e633e86ae3f7796d1ec51e77"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "f550d1d30e0111c2"
+                    ]
+                ],
+                "manufacturer": "samsung",
+                "model": "SM-G975F",
+                "name": "SM-G975F",
+                "sw_version": "30",
+                "entry_type": null,
+                "id": "cdd1eceb158233b73ac3559966b97258",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            }
+        ],
+        "deleted_devices": []
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "151e2e802637fd4af8384676aa31db0d",
+                "version": 1,
+                "domain": "met",
+                "title": "Home",
+                "data": {
+                    "track_home": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "onboarding",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "ea155545e633e86ae3f7796d1ec51e77",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "SM-G975F",
+                "data": {
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "2022.1.1-full (1890)",
+                    "device_name": "SM-G975F",
+                    "manufacturer": "samsung",
+                    "model": "SM-G975F",
+                    "os_name": "Android",
+                    "os_version": "30",
+                    "supports_encryption": false,
+                    "app_data": {
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+                        "push_token": "f3rXeOn3TW22P1mfm9VRvj:APA91bG44a76axyjdkmFAoZu-kNFO3LHPJSnoUB1y4bycEoWMsVdxGyF-BiWDAuGrwLpnbSpYU9RtYNH2T5abrocs5g2BxPmXbEdlwOkvKP3scw6gcENEkEqwMs9EVxf-Y9PA3B8ap_k"
+                    },
+                    "device_id": "f550d1d30e0111c2",
+                    "webhook_id": "1c0d7994c1ea5274ad6f0c684567b8b0840b4a34b90e188ac8d5e755a7c2e3c7",
+                    "user_id": "35a3ab5faeed4b25b6ece6d146f0599b"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "registration",
+                "unique_id": "io.homeassistant.companion.android-f550d1d30e0111c2",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "e94f202ba8c4cf7a097f0661df57f76e",
+                "version": 1,
+                "domain": "mqtt",
+                "title": "mqtt",
+                "data": {
+                    "broker": "mqtt",
+                    "port": 1883,
+                    "birth_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "online",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "will_message": {
+                        "topic": "homeassistant/status",
+                        "payload": "offline",
+                        "qos": 0,
+                        "retain": false
+                    },
+                    "discovery": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            }
+        ]
+    }
+}
